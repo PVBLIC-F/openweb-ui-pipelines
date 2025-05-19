@@ -78,6 +78,6 @@ class Pipeline:
         print(toxicity)
 
         if toxicity["toxicity"] > 0.5:
-            raise Exception("Toxic message detected")
+            raise Exception("Bad Language Detected")
 
         return body
